@@ -255,12 +255,19 @@ body {
   font-size: 2rem;
   color: white;
   font-weight: 300;
-  -webkit-transform: scale 1, 1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
   transition: all 1s linear;
 }
 .nav ul li a:hover {
   color: #2ed77a;
-  -webkit-transform: scale 4, 4;
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+.nav ul li a:active {
+  color: #2ed77a;
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
 }
 
 ul.social {
@@ -476,10 +483,10 @@ article.post-50 {
 #portfolio h2 {
   position: relative;
   top: 45%;
-  left: 2%;
+  left: 1.5%;
   letter-spacing: 5px;
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 3rem;
   margin: 0;
   max-width: 200px;
   color: #1c4226;
@@ -554,11 +561,11 @@ article.post-50 {
 }
 
 #contact {
-  background: url(img/cellphone4.png) no-repeat;
+  background: url(img/cellphone4.png) fixed no-repeat;
   background-size: cover;
   position: relative;
   z-index: 100;
-  height: 750px;
+  height: 610px;
 }
 #contact .contactcontainer {
   margin: 0 auto;
@@ -574,7 +581,7 @@ article.post-50 {
   border: 1px solid grey;
   margin: 0 auto;
   position: absolute;
-  top: 13%;
+  top: 8%;
   left: 36%;
 }
 #contact .contactcontainer .tittleWrap h2 {
@@ -586,7 +593,7 @@ article.post-50 {
 }
 
 #post-93 {
-  padding-top: 18%;
+  padding-top: 15%;
   padding-right: 5%;
 }
 #post-93 h3 {
@@ -597,6 +604,39 @@ article.post-50 {
 #post-93 p {
   color: white;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 300;
+}
+
+ul.contactSocial {
+  background-color: rgba(255, 255, 255, 0.2);
+  max-width: 370px;
+  margin: 3% auto;
+  border-radius: 10px;
+}
+ul.contactSocial li {
+  display: inline;
+  list-style: none;
+}
+ul.contactSocial li i {
+  color: black;
+  padding: 4% 14% 4% 4%;
+}
+ul.contactSocial li i:hover {
+  color: #1c8248;
+}
+
+.email {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  max-width: 100px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 1% 0;
+}
+.email i {
+  color: black;
+}
+.email i:hover {
+  color: #1c8248;
 }

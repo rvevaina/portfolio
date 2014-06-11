@@ -194,10 +194,16 @@ get_header() ?>
 
 			<?php the_content(); ?>
 
-			<ul class="social">
-				<li><a  href="https://twitter.com/ray_vevaina"><i class="fa fa-twitter fa-2x"></i></a></li> 
-				<li><a href="https://linkedin.com/in/rayhanv"><i class="fa fa-linkedin fa-2x"></i></a></li>
-				<li><a href="https://github.com/rvevaina"><i class="fa fa-github fa-2x"></i></a></li>
+			<div class="email">
+			<a href="mailto:rayhan_v@me.com"><i class="fa fa-envelope fa-5x"></i></a>
+			</div>
+
+			<p>or find me online at any of the places below</p>
+
+			<ul class="contactSocial">
+				<li><a href="https://twitter.com/ray_vevaina"><i class="fa fa-twitter fa-5x"></i></a></li> 
+				<li><a href="https://linkedin.com/in/rayhanv"><i class="fa fa-linkedin fa-5x"></i></a></li>
+				<li><a href="https://github.com/rvevaina"><i class="fa fa-github fa-5x"></i></a></li>
 			</ul>
 
 			<?php edit_post_link(); ?>
