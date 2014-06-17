@@ -40,19 +40,27 @@ get_header() ?>
 
 		<!-- article -->
 		<div id="about" class="clearfix">
-		<h2><?php the_title(); ?></h2>
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<div class="aboutContainer">
+				<div class="titlecontainer">
+					<h2><?php the_title(); ?></h2>
+				</div>
 				
 
+				<div class="content">
+					
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							
+					
+				
+						<?php the_content(); ?>
 
-			<?php the_content(); ?>
+						
+						<?php edit_post_link(); ?>
 
-			
-			<?php edit_post_link(); ?>
-
-		</article>
-
+					</article>
+				</div>
 		</div>
+			</div>
 		<!-- /article -->
 
 
@@ -139,12 +147,15 @@ get_header() ?>
 					<div id="post-<?php the_ID(); ?>" <?php post_class('projects'); ?>>
 						<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-							<a href="<?php the_permalink(); ?>">
-							<?php the_post_thumbnail('medium', array('class'=>"thumbnailSize") ); ?></a>
+							<a href="<?php the_field('link'); ?>">
+							<?php the_post_thumbnail('medium', array('class'=>"thumbnailSize") ); ?>
+							
 							<div class="mask">
-								<h3>TITLE</h3>
-								<p>text</p>
+								<h3><?php the_field('client_name');?></h3>
+								<p><?php the_field('short_description');?></p>
 							</div>
+							</a>
+							
 				     	</div>
 			     	</div>
 			     </div>
