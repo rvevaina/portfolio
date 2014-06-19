@@ -180,6 +180,15 @@ html {
   font-size: 62.5%;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
 body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
@@ -387,11 +396,11 @@ ul.social #menu-item-80 a {
 }
 
 #skills {
-  background: url(img/skills-background1.png) no-repeat;
+  background: url(img/skills-background1.png) repeat-y;
   background-size: 100%;
   height: 610px;
 }
-#skills h2 {
+#skills h2.rightTitle {
   position: relative;
   top: 45%;
   left: 86%;
@@ -427,8 +436,8 @@ ul.social #menu-item-80 a {
 }
 .front-end ul li {
   list-style: none;
-  line-height: 25px;
-  font-size: 15px;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .design {
@@ -452,9 +461,8 @@ ul.social #menu-item-80 a {
 }
 .design ul li {
   list-style: none;
-  line-height: 25px;
-  font-size: 15px;
-  font-style: light;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .writing {
@@ -477,8 +485,8 @@ ul.social #menu-item-80 a {
 }
 .writing ul li {
   list-style: none;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 #portfolio {
@@ -745,6 +753,49 @@ p.copyright {
     width: 50%;
     margin-left: 23%;
   }
+
+  #skills {
+    background: url(img/skills-background1.png) repeat-y -350px 0px;
+    height: 1320px;
+  }
+  #skills h2.rightTitle {
+    display: none;
+  }
+
+  .skillsicons {
+    width: 90%;
+  }
+  .skillsicons h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 12% 0 0 0;
+    color: #1c4226;
+  }
+  .skillsicons .front-end {
+    width: 94%;
+  }
+  .skillsicons .front-end img {
+    width: 45%;
+    height: auto;
+    margin: 10px 0 0 10px;
+  }
+  .skillsicons .design {
+    width: 85%;
+    clear: both;
+  }
+  .skillsicons .design img {
+    width: 45%;
+    height: auto;
+  }
+  .skillsicons .writing {
+    width: 94%;
+    clear: both;
+  }
+  .skillsicons .writing img {
+    width: 45%;
+    height: auto;
+    padding: 10px 0 20px 35px;
+  }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -775,6 +826,18 @@ p.copyright {
   #about {
     background: url(img/about-background.png) repeat-y -180px 0px;
     height: 800px;
+  }
+
+  #skills {
+    background: url(img/skills-background1.png) repeat-y -670px 0px;
+    height: 1220px;
+  }
+
+  .skillsicons {
+    width: 88%;
+  }
+  .skillsicons .writing img, .skillsicons .design img, .skillsicons .front-end img {
+    width: 70%;
   }
 }
 @media (min-width: 480px) and (max-width: 748px) {
@@ -817,6 +880,11 @@ p.copyright {
     width: 18%;
     margin: 22% 5% 0 2.5%;
   }
+
+  #skills h2.rightTitle {
+    font-size: 3rem;
+    top: 42%;
+  }
 }
 @media (min-width: 770px) and (max-width: 940px) {
   #about h2 {
@@ -829,9 +897,22 @@ p.copyright {
     width: 18%;
     margin: 25% 5% 0 2.5%;
   }
+
+  #skills h2.rightTitle {
+    font-size: 2.4em;
+    top: 40%;
+  }
+
+  .skillsicons ul li {
+    font-size: 1.3rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 2000px) {
   .content h2 {
+    display: none;
+  }
+
+  .skillsicons h2 {
     display: none;
   }
 }

@@ -79,19 +79,20 @@ get_header() ?>
 
 	<?php endif; ?>
 
-	<div id="skills" class="clearfix"> 
-   		<h2><span>SKILLS</span></h2>
+	<div id="skills"> 
+   		<h2 class="rightTitle">SKILLS</h2>
    	  	
    	  	<div class="skillscontainer">
 
 			<div class="skillsicons">
+				<h2>SKILLS</h2>
 		   	  	<div class="front-end">
 		   	  		<img src="<?php echo get_template_directory_uri(); ?>/img/front end.png" alt="">
 					
 					<ul>
-						<h3>Front-end development</h3>
+						<h3>Front-End Development</h3>
 						<li>HTML5 & CSS3</li>
-						<li>Javascript</li>
+						<li>JavaScript</li>
 						<li>jQuery</li>
 					</ul>
 					
