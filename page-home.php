@@ -42,11 +42,12 @@ get_header() ?>
 		<div id="about" class="clearfix">
 			<div class="aboutContainer">
 				<div class="titlecontainer">
-					<h2><?php the_title(); ?></h2>
+					<h2 class="leftTitle"><?php the_title(); ?></h2>
 				</div>
 				
 
 				<div class="content">
+					<h2>ABOUT</h2>
 					
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 							
