@@ -506,7 +506,7 @@ ul.social #menu-item-80 a {
   color: #1c4226;
   text-align: center;
   margin: 0;
-  padding-top: 5%;
+  padding: 10% 0 3% 0;
 }
 
 .portfolioTitleContainer {
@@ -562,7 +562,7 @@ ul.social #menu-item-80 a {
   opacity: 0;
 }
 .portfoliocontainer .thumbnails .projects .mask img.link {
-  width: 40%;
+  width: 30%;
   -webkit-transform: scale(0, 0);
   transform: scale(0, 0);
   transition: all 1s linear;
@@ -580,7 +580,7 @@ ul.social #menu-item-80 a {
   transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
   opacity: 1;
-  margin: 11% 0 0 28%;
+  margin: 16% 0 0 33%;
 }
 .portfoliocontainer .thumbnails .thumbnailSize {
   width: 100%;
@@ -603,50 +603,40 @@ ul.social #menu-item-80 a {
 }
 #contact .contactcontainer {
   margin: 0 auto;
-  max-width: 90%;
-  width: 1240px;
+  max-width: 1240px;
 }
 #contact .contactcontainer .tittleWrap {
+  padding: 5% 0 3% 0;
+}
+#contact .contactcontainer .tittleWrap h2 {
   height: 90px;
   width: 24%;
   padding: 20px;
-  color: white;
-  z-index: -100;
-  border: 1px solid grey;
-  margin: 0 auto;
-  position: absolute;
-  top: 8%;
-  left: 36%;
-}
-#contact .contactcontainer .tittleWrap h2 {
   letter-spacing: 5px;
   text-align: center;
   font-size: 3.8rem;
   margin: 0 auto;
   color: white;
+  border: 1px solid #27AE60;
 }
 
-#post-93 {
-  padding-top: 15%;
-  padding-right: 5%;
-}
-#post-93 h3 {
-  color: white;
-  text-align: center;
-  font-size: 2.4rem;
-}
 #post-93 p {
   color: white;
   text-align: center;
   font-size: 2.2rem;
   font-weight: 300;
 }
+#post-93 p.findMeOnline {
+  font-size: 1.8rem;
+  margin: 3% 0 2% 0;
+}
 
 ul.contactSocial {
   background-color: rgba(255, 255, 255, 0.2);
-  max-width: 370px;
-  margin: 3% auto;
+  width: 45%;
+  margin: 1% auto;
   border-radius: 10px;
+  text-align: center;
 }
 ul.contactSocial li {
   display: inline;
@@ -657,13 +647,13 @@ ul.contactSocial li i {
   padding: 4% 14% 4% 4%;
 }
 ul.contactSocial li i:hover {
-  color: #1c8248;
+  color: #166a3b;
 }
 
 .email {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.2);
-  max-width: 100px;
+  width: 10%;
   margin: 0 auto;
   border-radius: 10px;
   padding: 1% 0;
@@ -672,7 +662,7 @@ ul.contactSocial li i:hover {
   color: black;
 }
 .email i:hover {
-  color: #1c8248;
+  color: #166a3b;
 }
 
 p.copyright {
@@ -813,11 +803,58 @@ p.copyright {
     padding: 10px 0 20px 35px;
   }
 
+  #portfolio {
+    background: url(img/portfolio-background.png) repeat-y -150px 0px;
+    height: 1600px;
+  }
+
+  .portfolioSectionContainer {
+    max-width: 770px;
+    margin: 0 auto;
+  }
+
   .portfolioTitleContainer {
-    margin: 30% 0 0 0;
+    width: 14%;
   }
   .portfolioTitleContainer h2.leftTitle {
     display: none;
+  }
+
+  .portfoliocontainer {
+    float: left;
+    margin: 4% auto;
+    width: 86%;
+  }
+  .portfoliocontainer .thumbnails {
+    width: 55%;
+    height: auto;
+    float: left;
+    margin: 5% 10% 5% 21%;
+  }
+  .portfoliocontainer .thumbnails h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 5% 0 2% 0;
+  }
+  .portfoliocontainer .thumbnails p {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .portfoliocontainer .thumbnails:nth-child(2n+1) {
+    margin: 5% 10% 5% 21%;
+  }
+
+  ul.contactSocial {
+    width: 50%;
+  }
+
+  #contact .contactcontainer .tittleWrap {
+    padding-right: 14%;
+  }
+  #contact .contactcontainer .tittleWrap h2 {
+    color: white;
+    border: none;
   }
 }
 /* Landscape phones and down */
@@ -836,14 +873,17 @@ p.copyright {
   .nav {
     background-color: rgba(39, 174, 96, 0.9);
   }
+  .nav ul .menu-item-91 {
+    display: none;
+  }
   .nav ul li a {
-    font-size: 2rem;
+    font-size: 1.6rem;
     transition: all 0.9s linear;
   }
   .nav ul li a:hover {
-    color: #183d11;
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+    color: white;
+    -webkit-transform: none;
+    transform: none;
   }
 
   #about {
@@ -861,6 +901,29 @@ p.copyright {
   }
   .skillsicons .writing img, .skillsicons .design img, .skillsicons .front-end img {
     width: 70%;
+  }
+
+  #portfolio {
+    display: none;
+  }
+
+  #contact p {
+    display: none;
+  }
+  #contact ul.contactSocial {
+    width: 95%;
+    margin-top: 10%;
+  }
+  #contact .email {
+    width: 25%;
+    margin-top: 5%;
+  }
+
+  #contact {
+    height: 430px;
+  }
+  #contact .contactcontainer .tittleWrap {
+    padding-right: 50%;
   }
 }
 @media (min-width: 480px) and (max-width: 748px) {
@@ -951,5 +1014,11 @@ p.copyright {
 
   .portfolioSectionContainer h2.main {
     display: none;
+  }
+}
+@media (min-width: 0px) and (max-width: 1100px) {
+  #contact .contactcontainer .tittleWrap h2 {
+    color: white;
+    border: none;
   }
 }

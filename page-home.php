@@ -216,9 +216,10 @@ get_header() ?>
 
 			<div class="email">
 			<a href="mailto:rayhan_v@me.com"><i class="fa fa-envelope fa-5x"></i></a>
+
 			</div>
 
-			<p>or find me online at any of the places below</p>
+			<p class="findMeOnline">or find me online at any of the places below</p>
 
 			<ul class="contactSocial">
 				<li><a href="https://twitter.com/ray_vevaina"><i class="fa fa-twitter fa-5x"></i></a></li> 
