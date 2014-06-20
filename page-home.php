@@ -137,30 +137,36 @@ get_header() ?>
 	
 
 	<div id="portfolio">	
-   
-   		<h2>PROJECTS</h2>
+   	  	<div class="portfolioSectionContainer">
+   		
+	   		<div class="portfolioTitleContainer">
+	   			<h2 class="leftTitle">PROJECTS</h2>
+	   		</div>
+
+	   		<h2 class="main">PROJECTS</h2>
 		
-		<div class="portfoliocontainer clearfix">
-			<!-- <div class="portfoliothumbs"> -->
+			<div class="portfoliocontainer clearfix">
+				<!-- <div class="portfoliothumbs"> -->
 
-		<?php if ($portfolio->have_posts()): while ($portfolio->have_posts()) : $portfolio->the_post(); ?>
+			<?php if ($portfolio->have_posts()): while ($portfolio->have_posts()) : $portfolio->the_post(); ?>
 
-				<div class="thumbnails">		
-					<div id="post-<?php the_ID(); ?>" <?php post_class('projects'); ?>>
-						<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<div class="thumbnails">
+						<div id="post-<?php the_ID(); ?>" <?php post_class('projects'); ?>>
+							<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-							<a href="<?php the_field('link'); ?>">
-							<?php the_post_thumbnail('medium', array('class'=>"thumbnailSize") ); ?>
-							
-							<div class="mask">
-								<h3><?php the_field('client_name');?></h3>
-								<p><?php the_field('short_description');?></p>
-							</div>
-							</a>
-							
+								<a href="<?php the_field('link'); ?>">
+								<?php the_post_thumbnail('medium', array('class'=>"thumbnailSize") ); ?>
+								
+								<div class="mask">
+									<img class="link" src="<?php echo get_template_directory_uri(); ?>/img/link-icon.png" alt="">
+								
+								</div>
+								</a>
+					     	</div>	
 				     	</div>
-			     	</div>
-			     </div>
+						<h3><?php the_field('client_name');?></h3>
+						<p><?php the_field('short_description');?></p>
+				    </div>
 		<!-- 	</div> -->
 
 
@@ -178,8 +184,9 @@ get_header() ?>
 		<!-- /article -->
 
 	<?php endif; ?>
-	 </div>
+	 		</div>
 		</div>
+	</div>
 
 	</section>
 	<!-- /section -->

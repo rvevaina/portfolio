@@ -490,35 +490,56 @@ ul.social #menu-item-80 a {
 }
 
 #portfolio {
-  background: url(img/portfolio-background.png) no-repeat;
+  background: url(img/portfolio-background.png) repeat-y;
   background-size: 100%;
   z-index: 100;
-  height: 675px;
+  height: 875px;
   position: relative;
 }
-#portfolio h2 {
-  position: relative;
-  top: 43%;
-  left: 1.5%;
+#portfolio .portfolioSectionContainer {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+#portfolio .portfolioSectionContainer h2.main {
   letter-spacing: 5px;
+  font-size: 3.8rem;
+  color: #1c4226;
   text-align: center;
-  font-size: 3rem;
   margin: 0;
-  max-width: 200px;
+  padding-top: 5%;
+}
+
+.portfolioTitleContainer {
+  width: 18%;
+  float: left;
+  margin: 20% auto;
+}
+.portfolioTitleContainer h2.leftTitle {
+  letter-spacing: 5px;
+  font-size: 3rem;
   color: #1c4226;
 }
 
 .portfoliocontainer {
-  max-width: 950px;
-  margin-left: 22%;
+  float: left;
+  width: 82%;
+  margin-top: 4%;
 }
 .portfoliocontainer .thumbnails {
-  width: 30%;
+  width: 35%;
   height: auto;
   float: left;
-  margin-top: 17%;
-  border: 2px solid #bda64c;
-  border-radius: 6px;
+  margin-top: 3%;
+}
+.portfoliocontainer .thumbnails h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 5% 0 2% 0;
+}
+.portfoliocontainer .thumbnails p {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0;
 }
 .portfoliocontainer .thumbnails .projects {
   position: relative;
@@ -527,6 +548,8 @@ ul.social #menu-item-80 a {
 .portfoliocontainer .thumbnails .projects img {
   -webkit-transform: scale(1, 1);
   transition: all 1.5s ease-in-out;
+  border: 2px solid #bda64c;
+  border-radius: 6px;
 }
 .portfoliocontainer .thumbnails .projects .mask {
   background-color: #f7ce7a;
@@ -538,54 +561,37 @@ ul.social #menu-item-80 a {
   left: 0;
   opacity: 0;
 }
-.portfoliocontainer .thumbnails .projects .mask h3 {
-  padding-top: 8%;
-  letter-spacing: 3px;
-  text-align: center;
-  font-size: 1.2rem;
-  margin: 0 auto;
+.portfoliocontainer .thumbnails .projects .mask img.link {
+  width: 40%;
   -webkit-transform: scale(0, 0);
-  color: black;
+  transform: scale(0, 0);
   transition: all 1s linear;
   opacity: 0;
-  max-width: 200px;
-}
-.portfoliocontainer .thumbnails .projects .mask p {
-  -webkit-transform: scale(0, 0);
-  color: black;
-  transition: all 1s linear;
-  font-size: 1.2rem;
-  text-align: center;
-  opacity: 0;
-  margin: 0 auto;
-  max-width: 200px;
+  border: 0px;
 }
 .portfoliocontainer .thumbnails .projects:hover img {
   -webkit-transform: scale(6, 6);
   opacity: 0;
 }
 .portfoliocontainer .thumbnails .projects:hover .mask {
-  opacity: 1;
+  opacity: 0.7;
 }
-.portfoliocontainer .thumbnails .projects:hover h3 {
+.portfoliocontainer .thumbnails .projects:hover img.link {
+  transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
   opacity: 1;
-  max-width: 150px;
-  padding-bottom: 25%;
-  letter-spacing: 1px;
-}
-.portfoliocontainer .thumbnails .projects:hover p {
-  -webkit-transform: scale(1.2, 1.2);
-  opacity: 1;
-  max-width: 200px;
+  margin: 11% 0 0 28%;
 }
 .portfoliocontainer .thumbnails .thumbnailSize {
   width: 100%;
   height: auto;
 }
-.portfoliocontainer .thumbnails:nth-child(3n+2) {
-  margin-right: 5%;
-  margin-left: 5%;
+.portfoliocontainer .thumbnails:nth-child(2n+1) {
+  margin-right: 8%;
+  margin-left: 11%;
+}
+.portfoliocontainer .thumbnails:nth-child(n+3) {
+  margin-top: 5%;
 }
 
 #contact {
@@ -707,6 +713,16 @@ p.copyright {
   .nav ul li {
     padding: 1% 4% 1% 1%;
   }
+
+  .portfolioTitleContainer {
+    margin: 30% 0 0 0;
+  }
+  .portfolioTitleContainer h2.leftTitle {
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    color: #1c4226;
+    margin-left: 5%;
+  }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 770px) {
@@ -795,6 +811,13 @@ p.copyright {
     width: 45%;
     height: auto;
     padding: 10px 0 20px 35px;
+  }
+
+  .portfolioTitleContainer {
+    margin: 30% 0 0 0;
+  }
+  .portfolioTitleContainer h2.leftTitle {
+    display: none;
   }
 }
 /* Landscape phones and down */
@@ -885,6 +908,16 @@ p.copyright {
     font-size: 3rem;
     top: 42%;
   }
+
+  .portfolioTitleContainer {
+    margin: 28% 0 0 0;
+  }
+  .portfolioTitleContainer h2.leftTitle {
+    letter-spacing: 5px;
+    font-size: 2.2rem;
+    color: #1c4226;
+    margin-left: 5%;
+  }
 }
 @media (min-width: 770px) and (max-width: 940px) {
   #about h2 {
@@ -913,6 +946,10 @@ p.copyright {
   }
 
   .skillsicons h2 {
+    display: none;
+  }
+
+  .portfolioSectionContainer h2.main {
     display: none;
   }
 }
