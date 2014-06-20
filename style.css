@@ -512,7 +512,7 @@ ul.social #menu-item-80 a {
 .portfolioTitleContainer {
   width: 18%;
   float: left;
-  margin: 20% auto;
+  margin: 25% 0 0 1%;
 }
 .portfolioTitleContainer h2.leftTitle {
   letter-spacing: 5px;
@@ -522,7 +522,7 @@ ul.social #menu-item-80 a {
 
 .portfoliocontainer {
   float: left;
-  width: 82%;
+  width: 81%;
   margin-top: 4%;
 }
 .portfoliocontainer .thumbnails {
@@ -653,7 +653,7 @@ ul.contactSocial li i:hover {
 .email {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.2);
-  width: 10%;
+  width: 15%;
   margin: 0 auto;
   border-radius: 10px;
   padding: 1% 0;
@@ -845,10 +845,6 @@ p.copyright {
     margin: 5% 10% 5% 21%;
   }
 
-  ul.contactSocial {
-    width: 50%;
-  }
-
   #contact .contactcontainer .tittleWrap {
     padding-right: 14%;
   }
@@ -856,12 +852,17 @@ p.copyright {
     color: white;
     border: none;
   }
+  #contact ul.contactSocial {
+    width: 60%;
+  }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .headwrap .headwrapContainer .head {
-    height: 115px;
-    width: 45%;
+    height: 120px;
+    width: 38%;
+    background: url(img/logo.png) center no-repeat, #27ae60;
+    background-size: 68%;
   }
   .headwrap .headwrapContainer .head h1 {
     display: none;
