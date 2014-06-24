@@ -221,8 +221,7 @@ body {
 }
 .headwrap .headwrapContainer {
   margin: 0 auto;
-  max-width: 90%;
-  width: 1240px;
+  width: 100%;
 }
 .headwrap .headwrapContainer .head {
   text-align: center;
@@ -342,14 +341,13 @@ ul.social #menu-item-80 a {
 
 .titlecontainer {
   float: left;
-  width: 18%;
+  width: 11.5%;
   margin: 17% 5% 0 2.5%;
 }
 
 #about {
   background: url(img/about-background.png) repeat-y;
   background-size: 100%;
-  height: 610px;
 }
 #about h2 {
   letter-spacing: 5px;
@@ -512,7 +510,7 @@ ul.social #menu-item-80 a {
 .portfolioTitleContainer {
   width: 18%;
   float: left;
-  margin: 25% 0 0 1%;
+  margin: 25% 0 0 0;
 }
 .portfolioTitleContainer h2.leftTitle {
   letter-spacing: 5px;
@@ -889,7 +887,7 @@ p.copyright {
 
   #about {
     background: url(img/about-background.png) repeat-y -180px 0px;
-    height: 800px;
+    height: 850px;
   }
 
   #skills {
@@ -925,6 +923,10 @@ p.copyright {
   }
   #contact .contactcontainer .tittleWrap {
     padding-right: 50%;
+  }
+  #contact .contactcontainer i {
+    color: black;
+    padding: 4% 10% 4% 4%;
   }
 }
 @media (min-width: 480px) and (max-width: 748px) {

@@ -45,7 +45,7 @@ get_header() ?>
 					<h2 class="leftTitle"><?php the_title(); ?></h2>
 				</div>
 				
-
+			
 				<div class="content">
 					<h2>ABOUT</h2>
 					
